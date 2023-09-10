@@ -1,0 +1,51 @@
+
+/* Allgemeine Stildefinitionen */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+	
+	font-family: Arial, sans-serif;
+    background-image: url('sakura.jpg'); /* Hintergrundbild*/
+    background-size: cover; /*skaliert*/
+    background-repeat: no-repeat; /* nicht wiederholt */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Stildefinitionen Schachbrett */
+.chessboard {
+    border: 2px solid #white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.row:nth-child(odd) .cell:nth-child(even),
+.row:nth-child(even) .cell:nth-child(odd) {
+    background-color: #zzz;
+}
+
+.row .cell {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #333;
+}
+
+/* Schwarz und Weiß disinge vom Schachbrett*/
+.cell.white {
+    background-color: #fff;
+}
+
+.cell.black {
+    background-color: #F8C8DC;
+}
